@@ -115,7 +115,7 @@ header {
   padding: 10px;
   border-style: hidden;
   text-align: center;
-  width: 300px;
+  max-width: 300px;
   line-height: 30px;
   transition: transform 0.3s;
 }
@@ -225,4 +225,82 @@ tr:hover {
 }
 #contacts {
   margin-top: 30px;
+}
+@media (min-width: 375px) and (max-width: 1023px) {
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100vw;
+    padding-left: 60px;
+    padding-right: 10px;
+  }
+  .hidden {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    gap: 20px;
+  }
+  .right h1 {
+    font-size: 25px;
+  }
+  .about_column h3 {
+    text-align: center;
+  }
+  .about_column {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 20px;
+    gap: 10px;
+    color: #222222;
+  }
+  .about_column h3 {
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .replace {
+    gap: 80px;
+  }
+  .schedule h3 {
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  table {
+    font-size: 14px;
+    padding-top: 15px;
+    font-weight: 500;
+  }
+  td {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  .second p {
+    padding-right: 10px;
+  }
+  .second h2 {
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .hidden {
+    display: none;
+  }
 }
